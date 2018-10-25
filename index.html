@@ -2,18 +2,50 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Columns</title>
 </head>
 
 <style>
 	
 	* { box-sizing: border-box;
-		width: 100%;
-		margin: auto;
+		margin: 0px 20px 0px 20px auto;
 	}
+
+.navbar-toggle {
+	font-size: 20px;
+	position: relative;
+	top: 6px;
+	left: 50%;
+}
+
+	.container {
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 50px;
+		background-color: blue;
+	}
+
+	ul {
+	display: flex;
+	flex-direction: row;
+	margin-left: 0;
+	}
+
+	li {
+	padding: 0px 50px 0px 0px;
+	margin: 0;
+	align-items: center;
+	text-decoration: none;
+	list-style-type: none;
+	}
+
 
 	.row {
 	width: 100%;
+	margin-top: 55px;
 	}
 
 	.row::after {
@@ -40,6 +72,7 @@
 		.col-60 {
 			float: none;
 			width: 80%;
+			margin: auto;
 
 		}
 	}
@@ -48,6 +81,7 @@
 		.col-40 {
 			float: none;
 			width: 80%;
+			margin: auto;
 		}
 	}
 
@@ -55,6 +89,18 @@
 
 </style>
 <body>
+
+
+	<nav class="container">
+		<ul class="">
+			<li class="tabs">Tab1</li>
+			<li class="tabs">Tab2</li>
+			<li class="tabs">Tab3</li>
+		</ul>
+	</nav>
+	<span class="navbar-toggle" id="js-navbar-toggle">
+				<i class="fa fa-bars"></i></span>
+
 	<div class="row">
 		<div class="col-60">
 			<h1>Column 1</h1>
