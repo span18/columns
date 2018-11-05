@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -115,4 +116,77 @@
 
 	
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Columns</title>
+</head>
+
+<style>
+	
+	* { box-sizing: border-box;
+		width: 100%;
+		margin: auto;
+	}
+
+	.row {
+	width: 100%;
+	}
+
+	.row::after {
+	content: "";
+	clear: both;
+	display: table;
+	}
+
+	.col-60 {
+		width: 60%;
+		float: left;
+		border: 2px solid black;
+		padding: 50px;
+	}
+
+	.col-40 {
+		width: 40%;
+		float: left;
+		border: 2px solid red;
+		padding: 50px;
+	}
+
+	@media screen and (max-width: 900px) {
+		.col-60 {
+			float: none;
+			width: 80%;
+
+		}
+	}
+
+	@media screen and (max-width: 900px) {
+		.col-40 {
+			float: none;
+			width: 80%;
+		}
+	}
+
+
+
+</style>
+<body>
+	<div class="row">
+		<div class="col-60">
+			<h1>Column 1</h1>
+		</div>
+
+	<div class="row">
+		<div class="col-40">
+			<h1>Column 2</h1>
+		</div>
+		</div>
+	</div>
+
+	
+</body>
+>>>>>>> 8617a8900475bc6979a145f5c3916b5f12f06c1f
 </html>
